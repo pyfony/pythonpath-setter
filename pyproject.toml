@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "kodi-backup"
+version = "0.1"
+description = ""
+
+authors = [
+    "Jiri Koutny <jirkakoutny@gmail.com>"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+include = ["*.yaml"]
+
+packages = [
+    { include = "kodibackup", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "3.5.3"
+boto3 = "^1.14.56"
